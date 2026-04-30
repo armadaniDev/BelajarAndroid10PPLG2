@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <Button
+        android:backgroundTint="#37b159"
+        android:id="@+id/btnAritmatika"
+        android:text="ARITMATIKA"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:backgroundTint="#246AD0"
+        android:id="@+id/btnBangunDatar"
+        android:text="BANGUN DATAR"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:backgroundTint="#FBC02D"
+        android:id="@+id/btnBangunruang"
+        android:text="BANGUN RUANG"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmRegister">
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        android:text="Welcome : user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:text="Data Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvnama"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        android:text="Nama : user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        android:text="Email : user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        android:text="Alamat : user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvNomor"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        android:text="Nomor Wa : user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvpass"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        android:text="Password : user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvconfirmpass"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        android:text="Confirm Password : user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

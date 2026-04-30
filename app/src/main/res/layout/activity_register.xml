@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <ImageView
+        android:src="@drawable/smk"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:text="REGISTER"
+        android:layout_marginBottom="10dp"
+        android:textSize="23sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Silahkan isi form untuk mendaftar"
+        android:layout_marginBottom="20dp"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edNama"
+        android:hint="Nama"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/edAlamat"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Alamat" />
+
+    <EditText
+        android:id="@+id/edNomorWa"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Nomor WA"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edConfirm"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:backgroundTint="#673AB7"
+            android:id="@+id/btnRegis"
+            android:layout_marginRight="7dp"
+            android:text="REGISTER"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:backgroundTint="#246AD0"
+            android:id="@+id/btnBackLogin"
+            android:layout_marginRight="7dp"
+            android:text="LOGIN"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun? Masuk"
+        android:textSize="14sp" />
+
+</LinearLayout>
