@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        SharedPreferences sp = getSharedPreferences("Datauser", MODE_PRIVATE);
         edUsername = (EditText) findViewById(R.id.edUsername);
         edPassword = (EditText) findViewById(R.id.edPassword);
         btnLogin = (Button) findViewById(R.id.btnLogin);
@@ -42,14 +43,12 @@ public class MainActivity extends AppCompatActivity {
                 String username = edUsername.getText().toString();
                 String password = edPassword.getText().toString();
                 if(username.equals("admin") && password.equals("admin")){
-                    SharedPreferences sp = getSharedPreferences("Datauser", MODE_PRIVATE);
                     SharedPreferences.Editor editor = sp.edit();
-
                     editor.putString("username", username);
                     editor.apply();
                     //sukses
                     Toast.makeText(MainActivity.this, "Login Sukses", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, Skeleton.class));
+                    startActivity(new Intent(MainActivity.this, ListGame.class));
                 }else{
                     //gagal
                     Toast.makeText(MainActivity.this, "Login Gagal", Toast.LENGTH_SHORT).show();
